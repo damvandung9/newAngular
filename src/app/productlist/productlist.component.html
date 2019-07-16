@@ -1,0 +1,13 @@
+<div class="card">
+  <img [src]="product.img" class="card-img-top" alt="San pham">
+  <div class="card-body">
+    <h5 class="card-title">{{product.name}}</h5>
+    <ul class="list-unstyled">
+      <li>{{product.desc}}</li>
+      <li>${{product.price}}</li>
+      <li>Tinh trang: {{product.name?'Con hang':'Het hang'}}</li>
+    </ul>
+    <input type="text" (keyup)="handleKeyUp($event)" class="form-control mt-3"/><hr>
+    <a href="#" class="btn btn-primary" (click)="onClickMe($event)">Buy</a>
+  </div>
+</div>
